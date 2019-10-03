@@ -8,7 +8,7 @@ class Preference
     @allow_create_artists = allow_create_artists
   end
 
-  def create(attrs)
+  def self.create(attrs)
     self.new(attrs)
   end
 end
