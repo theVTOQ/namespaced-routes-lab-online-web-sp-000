@@ -8,7 +8,7 @@ class Preference
     @allow_create_artists = allow_create_artists
   end
 
-  def self.create(attrs)
-    self.new(attrs)
+  def self.create(artist_sort_order: nil, song_sort_order: nil, allow_create_songs: nil, allow_create_artists: nil)
+    self.new(artist_sort_order, song_sort_order, allow_create_songs, allow_create_artists)
   end
 end
